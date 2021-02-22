@@ -14,7 +14,8 @@ public class LevelGenerator {
                 while(!isNumeric) {
                         try {
                                 level = levelInput.nextInt();
-                                isNumeric = true;
+                                if(level >= 1 && level <=3) isNumeric = true;
+                                else System.out.println("Must be 1, 2 or 3!");
                         }
                         catch (InputMismatchException ime) {
                                 System.out.println("Must be a number!");
