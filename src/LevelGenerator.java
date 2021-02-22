@@ -3,17 +3,17 @@ import java.util.Scanner;
 
 public class LevelGenerator {
         public static int get() {
-                System.out.println("Enter number of desired level:");
                 System.out.println("1. Easy");
                 System.out.println("2. Medium");
                 System.out.println("3. Hard");
-                // level = user enters a corresponding number
+                System.out.println("Enter number of desired level:");
                 Scanner levelInput = new Scanner(System.in);
                 int level = 0;
                 boolean isNumeric = false;
                 while(!isNumeric) {
                         try {
                                 level = levelInput.nextInt();
+                                levelInput.nextLine();
                                 if(level >= 1 && level <=3) isNumeric = true;
                                 else System.out.println("Must be 1, 2 or 3!");
                         }
