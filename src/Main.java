@@ -4,8 +4,9 @@ public class Main {
     public static void main(String[] args) {
         // Ask user to select difficulty level with a menu
         int level = LevelGenerator.get();
-        System.out.println(level);
         // upperLimit = UpperLimitGenerator.getUpperLimit(level)
+        int upperLimit = UpperLimitGenerator.getUl(level);
+        System.out.println(upperLimit);
         // answer = NumberGenerator.getAnswer(upperLimit)
         // Ask user to guess number from 0 to upperLimit
         // Let user enter number
