@@ -1,3 +1,4 @@
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class LevelGenerator {
@@ -8,7 +9,18 @@ public class LevelGenerator {
                 System.out.println("3. Hard");
                 // level = user enters a corresponding number
                 Scanner levelInput = new Scanner(System.in);
-                int level = levelInput.nextInt();
+                int level = 0;
+                boolean isNumeric = false;
+                while(!isNumeric) {
+                        try {
+                                level = levelInput.nextInt();
+                                isNumeric = true;
+                        }
+                        catch (InputMismatchException ime) {
+                                System.out.println("Must be a number!");
+                                levelInput.nextLine(); // Advance the scanner
+                        }
+                }
                 return level;
         }
 }

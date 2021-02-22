@@ -3,6 +3,8 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         // Ask user to select difficulty level with a menu
+        int level = LevelGenerator.get();
+        System.out.println(level);
         // upperLimit = UpperLimitGenerator.getUpperLimit(level)
         // answer = NumberGenerator.getAnswer(upperLimit)
         // Ask user to guess number from 0 to upperLimit
