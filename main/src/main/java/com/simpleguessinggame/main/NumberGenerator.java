@@ -1,3 +1,5 @@
+package com.simpleguessinggame.main;
+
 import java.util.Random;
 
 public class NumberGenerator {

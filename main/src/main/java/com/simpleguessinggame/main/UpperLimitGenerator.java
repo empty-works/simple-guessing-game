@@ -1,3 +1,5 @@
+package com.simpleguessinggame.main;
+
 public class UpperLimitGenerator {
     public static int getUl(int level) {
         switch(level) {
