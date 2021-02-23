@@ -6,8 +6,8 @@ public class Main {
         int level = LevelGenerator.get();
         // upperLimit = UpperLimitGenerator.getUpperLimit(level)
         int upperLimit = UpperLimitGenerator.getUl(level);
-        System.out.println(upperLimit);
         // answer = NumberGenerator.getAnswer(upperLimit)
+        int answer = NumberGenerator.get(upperLimit);
         // Ask user to guess number from 0 to upperLimit
         // Let user enter number
         // Tell user whether right or wrong. If right, congratulate. If wrong, try again.
