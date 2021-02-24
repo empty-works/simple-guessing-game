@@ -2,10 +2,9 @@ package com.simpleguessinggame.main.generators;
 
 public class ScoreGenerator {
     public static int calculateScore(int answer, int userGuess, int numLives, int oldScore) {
-        int newScore = 0;
-        int proxScore = getProximityScore(answer, userGuess);
-
-        return 0;
+        int proximityScore = getProximityScore(answer, userGuess);
+        int livesScore = getLivesScore(numLives);
+        return oldScore + proximityScore + livesScore;
     }
 
     private static int getProximityScore(int answer, int userGuess) {
