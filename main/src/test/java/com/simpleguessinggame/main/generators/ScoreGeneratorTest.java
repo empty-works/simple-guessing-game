@@ -9,7 +9,7 @@ class ScoreGeneratorTest {
 
     @Test
     void calculateScore() {
-        int expectedScore = 1150;
+        int expectedScore = 900;
         int resultingScore = ScoreGenerator.calculateScore(33, 44, 3, 750);
         Assertions.assertEquals(expectedScore, resultingScore);
     }

@@ -8,7 +8,7 @@ public class ScoreGenerator {
     }
 
     private static int getProximityScore(int answer, int userGuess) {
-        int difference = answer - userGuess;
+        int difference = Math.abs(answer - userGuess);
         int BINGO = 0, HOT = 3, WARM = 7;
         if(difference != BINGO) {
             if(difference <= HOT) {

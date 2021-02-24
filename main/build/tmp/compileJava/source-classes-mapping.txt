@@ -2,11 +2,11 @@ com/simpleguessinggame/main/generators/NumberGenerator.java
  com.simpleguessinggame.main.generators.NumberGenerator
 com/simpleguessinggame/main/generators/UpperLimitGenerator.java
  com.simpleguessinggame.main.generators.UpperLimitGenerator
-com/simpleguessinggame/main/generators/ScoreGenerator.java
- com.simpleguessinggame.main.generators.ScoreGenerator
-com/simpleguessinggame/main/generators/LevelGenerator.java
- com.simpleguessinggame.main.generators.LevelGenerator
 com/simpleguessinggame/main/Gameplay.java
  com.simpleguessinggame.main.Gameplay
+com/simpleguessinggame/main/generators/LevelGenerator.java
+ com.simpleguessinggame.main.generators.LevelGenerator
 com/simpleguessinggame/main/Main.java
  com.simpleguessinggame.main.Main
+com/simpleguessinggame/main/generators/ScoreGenerator.java
+ com.simpleguessinggame.main.generators.ScoreGenerator
