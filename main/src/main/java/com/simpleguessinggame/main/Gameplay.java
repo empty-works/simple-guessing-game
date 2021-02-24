@@ -2,6 +2,9 @@ package com.simpleguessinggame.main;
 
 public class Gameplay {
     // Ask user to enter a guess. First guess is free.
+    public static int getFinalScore(int answer) {
+        return 0;
+    }
     // Check if guess matches answer
     // If user correct, calculate score based on number lives left and how close each guess was.
     // If user incorrect, tell user if below answer or above and hot, warm or cold.

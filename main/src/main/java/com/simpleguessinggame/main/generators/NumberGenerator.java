@@ -1,4 +1,4 @@
-package com.simpleguessinggame.main;
+package com.simpleguessinggame.main.generators;
 
 import java.util.Random;
 
