@@ -2,6 +2,7 @@ package com.simpleguessinggame.main;
 
 import com.simpleguessinggame.main.generators.LevelGenerator;
 import com.simpleguessinggame.main.generators.NumberGenerator;
+import com.simpleguessinggame.main.generators.ScoreGenerator;
 import com.simpleguessinggame.main.generators.UpperLimitGenerator;
 
 public class Main {
@@ -14,6 +15,11 @@ public class Main {
         int answer = NumberGenerator.get(upperLimit);
         // Gameplay time.
         // int finalAnswer =
+
+        // Testing ScoreGenerator
+        int finalScore = ScoreGenerator.calculateScore(33, 44, 3, 750);
+        System.out.println(finalScore);
+
         // Ask user if they would like to try again.
     }
 }

@@ -1,0 +1,4 @@
+com/simpleguessinggame/main/NumberGeneratorTest.java
+ com.simpleguessinggame.main.NumberGeneratorTest
+com/simpleguessinggame/main/generators/ScoreGeneratorTest.java
+ com.simpleguessinggame.main.generators.ScoreGeneratorTest

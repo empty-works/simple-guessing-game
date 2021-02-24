@@ -26,6 +26,6 @@ public class ScoreGenerator {
 
     private static int getLivesScore(int numLives) {
         // More lives means a score accumulating with each guess.
-        return numLives * 5;
+        return numLives * 50;
     }
 }
