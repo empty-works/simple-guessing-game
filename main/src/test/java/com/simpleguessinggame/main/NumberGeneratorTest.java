@@ -9,6 +9,7 @@ class NumberGeneratorTest {
 
     @Test
     void get(int upperLimit) {
+        
         Assertions.assertEquals(1, 1);
     }
 }
