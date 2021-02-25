@@ -14,12 +14,7 @@ public class Main {
         // answer = com.simpleguessinggame.main.generators.NumberGenerator.getAnswer(upperLimit)
         int answer = NumberGenerator.get(upperLimit);
         // Gameplay time.
-        // int finalAnswer =
-
-        // Testing ScoreGenerator
-        int finalScore = ScoreGenerator.calculateScore(33, 44, 3, 750);
-        System.out.println(finalScore);
-
+        int finalScore = Gameplay.start(answer, upperLimit);
         // Ask user if they would like to try again.
     }
 }
