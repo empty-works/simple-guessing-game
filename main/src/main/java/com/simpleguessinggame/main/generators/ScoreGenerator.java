@@ -18,7 +18,9 @@ public class ScoreGenerator {
                 return 100;
             }
             // User's guess is cold.
-            else return 0;
+            else {
+                return 0;
+            }
         }
         // User gets correct answer
         else return 450;
