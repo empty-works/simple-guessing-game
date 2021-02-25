@@ -1,9 +1,9 @@
 package com.simpleguessinggame.main;
 
 public class HotWarmColdHelper {
-    int BINGO = 0, HOT = 3, WARM = 7;
+    final int BINGO = 0, HOT = 3, WARM = 7;
 
-    public static int getHotWarmColdScore(int difference) {
+    public int getHotWarmColdScore(int difference) {
         if (difference != BINGO) {
             if (difference <= HOT) {
                 return 250;
@@ -20,7 +20,7 @@ public class HotWarmColdHelper {
         else return 450;
     }
 
-    public static String getHotWarmColdScore(int difference) {
+    public String getHotWarmColdMessage(int difference) {
         if (difference != BINGO) {
             if (difference <= HOT) {
                 return "Red hot! You're very close.";
