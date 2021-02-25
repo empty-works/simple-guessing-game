@@ -1,8 +1,8 @@
 package com.simpleguessinggame.main;
 
+import com.simpleguessinggame.main.gameplay.Gameplay;
 import com.simpleguessinggame.main.generators.LevelGenerator;
 import com.simpleguessinggame.main.generators.NumberGenerator;
-import com.simpleguessinggame.main.generators.ScoreGenerator;
 import com.simpleguessinggame.main.generators.UpperLimitGenerator;
 
 public class Main {

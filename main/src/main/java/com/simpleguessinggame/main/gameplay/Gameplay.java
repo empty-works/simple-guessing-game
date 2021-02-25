@@ -1,4 +1,4 @@
-package com.simpleguessinggame.main;
+package com.simpleguessinggame.main.gameplay;
 
 import java.util.Scanner;
 
@@ -7,13 +7,8 @@ public class Gameplay {
     public static int start(int answer, int upperLimit) {
         int score = 0;
         System.out.println("Enter a guess from 0 to " + upperLimit);
-        Scanner scan = new Scanner(System.in);
-        int userGuess = scan.nextInt();
-        scan.nextLine();
-
         return 0;
     }
-    // Check if guess matches answer
     // If user correct, calculate score based on number lives left and how close each guess was.
     // If user incorrect, tell user if below answer or above and hot, warm or cold.
     // If user runs out of lives, then calculate scored based on how close each guess was.
