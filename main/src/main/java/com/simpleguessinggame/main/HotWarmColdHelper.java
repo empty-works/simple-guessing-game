@@ -19,4 +19,21 @@ public class HotWarmColdHelper {
         // User gets correct answer
         else return 450;
     }
+
+    public static String getHotWarmColdScore(int difference) {
+        if (difference != BINGO) {
+            if (difference <= HOT) {
+                return "Red hot! You're very close.";
+            }
+            if (difference <= WARM) {
+                return "Warm. Your guess is pretty close.";
+            }
+            // User's guess is cold.
+            else {
+                return "Brrr. Not even close.";
+            }
+        }
+        // User gets correct answer
+        else return "Correct!";
+    }
 }
