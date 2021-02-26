@@ -23,21 +23,26 @@ public class HotWarmColdHelper {
 
     //TODO: include positive and negative difference values
     public String getHotWarmColdMessage(int userGuess, int answer) {
-        boolean isPositive = (userGuess - answer > 0) ? true : false;
+        StringBuilder sb = new StringBuilder();
         int difference = Math.abs(userGuess - answer);
+        boolean isPositive = (userGuess - answer > 0) ? true : false;
         if (difference != BINGO) {
             if (difference <= HOT) {
-                return "Red hot! You're very close.";
+                sb.append("Red hot! You're very close.");
             }
             if (difference <= WARM) {
-                return "Warm. Your guess is pretty close.";
+                sb.append("Warm. Your guess is pretty close.");
             }
             // User's guess is cold.
             else {
-                return "Brrr. Not even close.";
+                sb.append("Brrr. Not even close.");
             }
         }
+        else sb.append("Correct!");
+
+        if(isPositive) sb.append(" Your guess is too high.");
+        else sb.append(" Your guess is too low.");
         // User gets correct answer
-        else return "Correct!";
+        return sb.toString();
     }
 }
