@@ -23,6 +23,8 @@ public class HotWarmColdHelper {
 
     //TODO: include positive and negative difference values
     public String getHotWarmColdMessage(int userGuess, int answer) {
+        boolean isPositive = (userGuess - answer > 0) ? true : false;
+        int difference = Math.abs(userGuess - answer);
         if (difference != BINGO) {
             if (difference <= HOT) {
                 return "Red hot! You're very close.";
