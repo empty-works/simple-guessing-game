@@ -3,7 +3,8 @@ package com.simpleguessinggame.main;
 public class HotWarmColdHelper {
     final int BINGO = 0, HOT = 3, WARM = 7;
 
-    public int getHotWarmColdScore(int difference) {
+    public int getHotWarmColdScore(int userGuess, int answer) {
+        int difference = Math.abs(userGuess - answer);
         if (difference != BINGO) {
             if (difference <= HOT) {
                 return 250;
@@ -20,7 +21,8 @@ public class HotWarmColdHelper {
         else return 450;
     }
 
-    public String getHotWarmColdMessage(int difference) {
+    //TODO: include positive and negative difference values
+    public String getHotWarmColdMessage(int userGuess, int answer) {
         if (difference != BINGO) {
             if (difference <= HOT) {
                 return "Red hot! You're very close.";
