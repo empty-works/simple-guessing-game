@@ -6,6 +6,8 @@ public class HotWarmColdHelper {
     final static String WARMER_MESSAGE = "Getting warmer. Pretty close.";
     final static String WARM_MESSAGE = "Getting warm now...";
     final static String COLD_MESSAGE = "Brrr, cold. Not even close.";
+    final static String TOO_HIGH = " Your guess is too high.";
+    final static String TOO_LOW = " Your guess is too low.";
 
     public int getHotWarmColdScore(int userGuess, int answer) {
         int difference = Math.abs(userGuess - answer);
@@ -50,8 +52,8 @@ public class HotWarmColdHelper {
         }
         else sb.append("Correct!");
 
-        if(isPositive) sb.append(" Your guess is too high.");
-        else sb.append(" Your guess is too low.");
+        if(isPositive) sb.append(TOO_HIGH);
+        else sb.append(TOO_LOW);
         // User gets correct answer
         return sb.toString();
     }
