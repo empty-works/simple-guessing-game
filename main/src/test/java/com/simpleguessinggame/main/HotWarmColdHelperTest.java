@@ -26,5 +26,8 @@ class HotWarmColdHelperTest {
 
     @Test
     void getHotWarmColdMessage() {
+        HotWarmColdHelper help = new HotWarmColdHelper();
+        String hotMessage = help.getHotWarmColdMessage(20, 20);
+        String expectedHotMessage = "";
     }
 }
