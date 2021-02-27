@@ -7,6 +7,7 @@ public class Gameplay {
     public static int start(int answer, int upperLimit) {
         int score = 0;
         System.out.println("Enter a guess from 0 to " + upperLimit);
+
         return 0;
     }
     // If user correct, calculate score based on number lives left and how close each guess was.

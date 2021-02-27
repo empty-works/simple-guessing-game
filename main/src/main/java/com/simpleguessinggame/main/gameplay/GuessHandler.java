@@ -1,4 +1,5 @@
 package com.simpleguessinggame.main.gameplay;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class GuessHandler {
@@ -7,12 +8,15 @@ public class GuessHandler {
         int INVALID = -1;
         Scanner scan = new Scanner(System.in);
         int userGuess = INVALID;
-        boolean isNumeric = false;
-        while(!isNumeric) {
+        boolean isCorrect = false;
+        while(!isCorrect) {
             try {
                 userGuess = scan.nextInt();
                 scan.nextLine();
-                if(userGuess == answer) isNumeric = true;
+                if(userGuess == answer) isCorrect = true;
+                else
+            }
+            catch(InputMismatchException ime) {
 
             }
         }
