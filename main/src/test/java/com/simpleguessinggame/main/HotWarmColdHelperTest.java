@@ -16,7 +16,12 @@ class HotWarmColdHelperTest {
         int warmerScore = help.getHotWarmColdScore(20, 27);
         int expectedWarmerScore = 150;
         Assertions.assertEquals(expectedWarmerScore, warmerScore);
-        int warmScore = help.getHotWarmColdScore(20, 31);
+        int warmScore = help.getHotWarmColdScore(20, 30);
+        int expectedWarmScore = 75;
+        Assertions.assertEquals(expectedWarmScore, warmScore);
+        int coldScore = help.getHotWarmColdScore(20, 33);
+        int expectedColdScore = 0;
+        Assertions.assertEquals(expectedColdScore, coldScore);
     }
 
     @Test

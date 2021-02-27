@@ -1,7 +1,7 @@
 package com.simpleguessinggame.main;
 
 public class HotWarmColdHelper {
-    final int BINGO = 0, HOT = 3, WARMER = 7, WARM = 11;
+    final int BINGO = 0, HOT = 3, WARMER = 7, WARM = 10;
 
     public int getHotWarmColdScore(int userGuess, int answer) {
         int difference = Math.abs(userGuess - answer);
