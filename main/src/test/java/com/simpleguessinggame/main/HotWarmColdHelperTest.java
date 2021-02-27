@@ -27,7 +27,17 @@ class HotWarmColdHelperTest {
     @Test
     void getHotWarmColdMessage() {
         HotWarmColdHelper help = new HotWarmColdHelper();
-        String hotMessage = help.getHotWarmColdMessage(20, 20);
-        String expectedHotMessage = "";
+        String hotMessage = help.getHotWarmColdMessage(20, 22);
+        String expectedHotMessage = HotWarmColdHelper.HOT_MESSAGE;
+        Assertions.assertEquals(expectedHotMessage, hotMessage);
+        String warmerMessage = help.getHotWarmColdMessage(20, 27);
+        String expectedWarmerMessage = HotWarmColdHelper.WARMER_MESSAGE;
+        Assertions.assertEquals(expectedWarmerMessage, warmerMessage);
+        String warmMessage = help.getHotWarmColdMessage(20, 30);
+        String expectedWarmMessage = HotWarmColdHelper.WARM_MESSAGE;
+        Assertions.assertEquals(expectedWarmMessage, warmMessage);
+        String coldMessage = help.getHotWarmColdMessage(20, 30);
+        String expectedColdMessage = HotWarmColdHelper.COLD_MESSAGE;
+        Assertions.assertEquals(expectedColdMessage, coldMessage);
     }
 }
