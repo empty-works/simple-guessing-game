@@ -1,7 +1,7 @@
 package com.simpleguessinggame.main;
 
 public class HotWarmColdHelper {
-    final int BINGO = 0, HOT = 3, WARM = 7, WARMER = 11;
+    final int BINGO = 0, HOT = 3, WARMER = 7, WARM = 11;
 
     public int getHotWarmColdScore(int userGuess, int answer) {
         int difference = Math.abs(userGuess - answer);
@@ -9,10 +9,10 @@ public class HotWarmColdHelper {
             if(difference <= HOT) {
                 return 300;
             }
-            if(difference <= WARM) {
+            if(difference <= WARMER) {
                 return 150;
             }
-            if(difference <= WARMER) {
+            if(difference <= WARM) {
                 return 75;
             }
             // User's guess is cold.
@@ -33,11 +33,11 @@ public class HotWarmColdHelper {
             if(difference <= HOT) {
                 sb.append("Red hot! You're very close.");
             }
-            if(difference <= WARM) {
-                sb.append("Very warm. Pretty close.");
-            }
             if(difference <= WARMER) {
-                sb.append("Slightly warm now...");
+                sb.append("Getting warmer. Pretty close.");
+            }
+            if(difference <= WARM) {
+                sb.append("Getting warm now...");
             }
             // User's guess is cold.
             else {
