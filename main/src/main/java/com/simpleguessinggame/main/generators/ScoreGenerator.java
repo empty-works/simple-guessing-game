@@ -5,7 +5,6 @@ import com.simpleguessinggame.main.HotWarmColdHelper;
 public class ScoreGenerator {
     public static int calculateScore(int userGuess, int answer, int numLives, int oldScore) {
         int proximityScore = getProximityScore(userGuess, answer);
-        String proximityMessage = getProximityMessage(userGuess, answer);
         int livesScore = getLivesScore(numLives);
         return oldScore + proximityScore + livesScore;
     }
@@ -13,11 +12,6 @@ public class ScoreGenerator {
     private static int getProximityScore(int userGuess, int answer) {
         HotWarmColdHelper help = new HotWarmColdHelper();
         return help.getHotWarmColdScore(userGuess, answer);
-    }
-
-    private static String getProximityMessage(int userGuess, int answer) {
-        HotWarmColdHelper help = new HotWarmColdHelper();
-        return help.getHotWarmColdMessage(userGuess, answer);
     }
 
     private static int getLivesScore(int numLives) {

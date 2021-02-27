@@ -39,5 +39,11 @@ class HotWarmColdHelperTest {
         String coldMessage = help.getHotWarmColdMessage(20, 30);
         String expectedColdMessage = HotWarmColdHelper.COLD_MESSAGE;
         Assertions.assertEquals(expectedColdMessage, coldMessage);
+        String tooHighMessage = help.getHotWarmColdMessage(20, 19);
+        String expectedTooHighMessage = HotWarmColdHelper.TOO_HIGH;
+        Assertions.assertEquals(expectedTooHighMessage, tooHighMessage);
+        String tooLowMessage = help.getHotWarmColdMessage(20, 21);
+        String expectedTooLowMessage = HotWarmColdHelper.TOO_LOW;
+        Assertions.assertEquals(expectedTooLowMessage, tooLowMessage);
     }
 }

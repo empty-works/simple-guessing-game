@@ -14,7 +14,9 @@ public class GuessHandler {
                 userGuess = scan.nextInt();
                 scan.nextLine();
                 if(userGuess == answer) isCorrect = true;
-                else
+                else {
+
+                }
             }
             catch(InputMismatchException ime) {
 
