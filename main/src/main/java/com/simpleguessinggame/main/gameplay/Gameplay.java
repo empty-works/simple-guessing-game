@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Gameplay {
     // Ask user to enter a guess. First guess is free.
     public static int start(int answer, int upperLimit) {
-        int score = 0;
+        int finalScore = 0;
         System.out.println("Enter a guess from 0 to " + upperLimit);
 
         return 0;

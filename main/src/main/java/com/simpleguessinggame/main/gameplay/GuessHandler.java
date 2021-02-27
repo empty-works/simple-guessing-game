@@ -1,4 +1,6 @@
 package com.simpleguessinggame.main.gameplay;
+import com.simpleguessinggame.main.generators.ScoreGenerator;
+
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -6,6 +8,7 @@ public class GuessHandler {
     // Check if guess matches answer
     public static int getFinalScore(int answer) {
         int INVALID = -1;
+        int currentScore = 0;
         Scanner scan = new Scanner(System.in);
         int userGuess = INVALID;
         boolean isCorrect = false;
@@ -15,7 +18,7 @@ public class GuessHandler {
                 scan.nextLine();
                 if(userGuess == answer) isCorrect = true;
                 else {
-
+                    currentScore = ScoreGenerator.calculateScore()
                 }
             }
             catch(InputMismatchException ime) {
