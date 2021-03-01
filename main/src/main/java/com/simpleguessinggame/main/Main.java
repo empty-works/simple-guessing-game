@@ -15,6 +15,7 @@ public class Main {
         int answer = NumberGenerator.get(upperLimit);
         // Number of lives.
         LivesHandler livesHandler = new LivesHandler(level);
+
         // Handle user's guess.
 
         // Ask user if they would like to try again.
