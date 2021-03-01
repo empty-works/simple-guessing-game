@@ -12,7 +12,8 @@ public class LevelGenerator {
                         levels.add(i);
                         System.out.println("Level " + i);
                 }
-                System.out.println("Enter number of desired level:");
+                System.out.println("Enter number of desired level from 1 - " +
+                        NUM_LEVELS + ": ");
                 Scanner levelInput = new Scanner(System.in);
                 int level = 0;
                 boolean isNumeric = false;
@@ -21,7 +22,7 @@ public class LevelGenerator {
                                 level = levelInput.nextInt();
                                 levelInput.nextLine();
                                 if(level > 0 && level <= NUM_LEVELS) isNumeric = true;
-                                else System.out.println("Must be 1, 2 or 3!");
+                                else System.out.println("Must be 1 - " + NUM_LEVELS + "!");
                         }
                         catch (InputMismatchException ime) {
                                 System.out.println("Must be a number!");

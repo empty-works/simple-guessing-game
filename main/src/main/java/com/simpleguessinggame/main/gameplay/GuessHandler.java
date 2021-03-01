@@ -12,13 +12,16 @@ public class GuessHandler {
         Scanner scan = new Scanner(System.in);
         int userGuess = INVALID;
         boolean isCorrect = false;
+
+        // TODO: Get number of lives from lives handler
+
         while(!isCorrect) {
             try {
                 userGuess = scan.nextInt();
                 scan.nextLine();
                 if(userGuess == answer) isCorrect = true;
                 else {
-                    currentScore = ScoreGenerator.calculateScore()
+                    currentScore = ScoreGenerator.calculateScore(userGuess, answer, );
                 }
             }
             catch(InputMismatchException ime) {
