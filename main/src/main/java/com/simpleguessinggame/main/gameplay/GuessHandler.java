@@ -14,7 +14,7 @@ public class GuessHandler {
         boolean isCorrect = false;
 
         // TODO: Get number of lives from lives handler
-
+        int numLives
 
         while(!isCorrect) {
             try {
