@@ -15,6 +15,7 @@ public class GuessHandler {
 
         // TODO: Get number of lives from lives handler
 
+
         while(!isCorrect) {
             try {
                 userGuess = scan.nextInt();
