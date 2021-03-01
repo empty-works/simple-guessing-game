@@ -9,13 +9,11 @@ public class Main {
     public static void main(String[] args) {
         // Ask user to select difficulty level with a menu
         int level = LevelGenerator.get();
-        // upperLimit = com.simpleguessinggame.main.generators.UpperLimitGenerator.getUpperLimit(level)
         int upperLimit = UpperLimitGenerator.getUl(level);
-        // answer = com.simpleguessinggame.main.generators.NumberGenerator.getAnswer(upperLimit)
         int answer = NumberGenerator.get(upperLimit);
         // Number of lives.
-        LivesHandler livesHandler = new LivesHandler(level);
-
+        LivesHandler livesHandler = new LivesHandler();
+        int lives = livesHandler.getNumLives(level);
         // Handle user's guess.
 
         // Ask user if they would like to try again.
