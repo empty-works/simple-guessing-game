@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class GuessHandler {
     // Check if guess matches answer
-    public static int getFinalScore(int answer) {
+    public static GuessResultsContainer getResults(int answer) {
         int INVALID = -1;
         int currentScore = 0;
         Scanner scan = new Scanner(System.in);
@@ -15,19 +15,21 @@ public class GuessHandler {
 
         // TODO: Get number of lives from lives handler
         // TODO: Figure out what to return to main from here
-        int numLives
+        int numLives = ;
 
-        while(!isCorrect) {
-            try {
-                userGuess = scan.nextInt();
-                scan.nextLine();
-                if(userGuess == answer) isCorrect = true;
-                else {
-                    currentScore = ScoreGenerator.calculateScore(userGuess, answer, );
+        private GuessResultsContainer getResults(int numLives) {
+            while(!isCorrect) {
+                try {
+                    userGuess = scan.nextInt();
+                    scan.nextLine();
+                    if(userGuess == answer) isCorrect = true;
+                    else {
+                        currentScore = ScoreGenerator.calculateScore(userGuess, answer, );
+                    }
                 }
-            }
-            catch(InputMismatchException ime) {
+                catch(InputMismatchException ime) {
 
+                }
             }
         }
     }
