@@ -1,6 +1,6 @@
 package com.simpleguessinggame.main;
 
-import com.simpleguessinggame.main.gameplay.LivesHandler;
+import com.simpleguessinggame.main.generators.LivesGenerator;
 import com.simpleguessinggame.main.generators.LevelGenerator;
 import com.simpleguessinggame.main.generators.NumberGenerator;
 import com.simpleguessinggame.main.generators.UpperLimitGenerator;
@@ -12,7 +12,7 @@ public class Main {
         int upperLimit = UpperLimitGenerator.getUl(level);
         int answer = NumberGenerator.get(upperLimit);
         // Number of lives.
-        LivesHandler livesHandler = new LivesHandler();
+        LivesGenerator livesHandler = new LivesGenerator();
         int lives = livesHandler.getNumLives(level);
         // Handle user's guess.
 
