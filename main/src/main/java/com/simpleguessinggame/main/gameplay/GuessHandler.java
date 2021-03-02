@@ -14,6 +14,7 @@ public class GuessHandler {
         boolean isCorrect = false;
 
         // TODO: Get number of lives from lives handler
+        // TODO: Figure out what to return to main from here
         int numLives
 
         while(!isCorrect) {
@@ -29,13 +30,5 @@ public class GuessHandler {
 
             }
         }
-    }
-
-    private static void handleWrongGuess(int userGuess, int answer) {
-        boolean isPositive = (userGuess - answer > 0) ? true : false;
-        int difference = Math.abs(userGuess - answer);
-        if(isPositive) System.out.println("Your guess is too high.");
-        else System.out.println("Your guess is too low.");
-
     }
 }
