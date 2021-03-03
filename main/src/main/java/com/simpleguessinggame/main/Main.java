@@ -1,5 +1,7 @@
 package com.simpleguessinggame.main;
 
+import com.simpleguessinggame.main.gameplay.GuessHandler;
+import com.simpleguessinggame.main.gameplay.GuessResultsContainer;
 import com.simpleguessinggame.main.generators.LivesGenerator;
 import com.simpleguessinggame.main.generators.LevelGenerator;
 import com.simpleguessinggame.main.generators.NumberGenerator;
@@ -15,7 +17,8 @@ public class Main {
         LivesGenerator livesHandler = new LivesGenerator();
         int lives = livesHandler.getNumLives(level);
         // Handle user's guess.
-
+        GuessResultsContainer grc = GuessHandler.getResults(level, answer);
         // Ask user if they would like to try again.
+
     }
 }

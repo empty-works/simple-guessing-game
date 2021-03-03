@@ -39,10 +39,10 @@ public class HotWarmColdHelper {
             if(difference <= HOT) {
                 sb.append(HOT_MESSAGE);
             }
-            if(difference <= WARMER) {
+            else if(difference <= WARMER) {
                 sb.append(WARMER_MESSAGE);
             }
-            if(difference <= WARM) {
+            else if(difference <= WARM) {
                 sb.append(WARM_MESSAGE);
             }
             // User's guess is cold.
