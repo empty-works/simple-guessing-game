@@ -19,14 +19,16 @@ public class GuessHandler {
             try {
                 userGuess = scan.nextInt();
                 scan.nextLine();
+                currentScore = ScoreGenerator.calculateScore(
+                        userGuess, answer, numLives, currentScore);
+                numLives--;
                 if(userGuess == answer || numLives == 0) {
                     isDone = true;
                 }
-                currentScore = ScoreGenerator.calculateScore(
-                        userGuess, answer, numLives, currentScore);
             }
             catch(InputMismatchException ime) {
-
+                System.out.println("Must be a number!");
+                scan.nextLine();
             }
         }
         return grc;
