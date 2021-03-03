@@ -7,12 +7,8 @@ import java.util.Scanner;
 
 public class GuessHandler {
     // Check if guess matches answer
-    public static GuessResultsContainer getResults(int answer, int level) {
+    public static GuessResultsContainer getResults(int level, int answer) {
         int maxNumLives = LivesGenerator.getNumLives(level);
-        return getResultsHelper(maxNumLives, answer);
-    }
-
-    private static GuessResultsContainer getResultsHelper(int maxNumLives, int answer) {
         int currentScore = 0;
         int numLives = maxNumLives;
         Scanner scan = new Scanner(System.in);
