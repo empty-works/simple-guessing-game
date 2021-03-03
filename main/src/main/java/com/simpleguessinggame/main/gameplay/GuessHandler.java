@@ -21,6 +21,7 @@ public class GuessHandler {
                 scan.nextLine();
                 currentScore = ScoreGenerator.calculateScore(
                         userGuess, answer, numLives, currentScore);
+                grc.addGuessLivesLeftScore(userGuess, numLives, currentScore);
                 numLives--;
                 if(userGuess == answer || numLives == 0) {
                     isDone = true;
